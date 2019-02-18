@@ -31,6 +31,7 @@ if (game.toLowerCase() === 'yes') {
         if (grantHealth <= 0) {
             grantHealth = 0;
             grantNumberOfTimesDefeated++;
+            console.log('Grant is defeated')
             if (grantNumberOfTimesDefeated < 3) {
             grantHealth = 10;}
         }
@@ -51,7 +52,7 @@ if (game.toLowerCase() === 'yes') {
 
     }while (userHealth > 0 && grantNumberOfTimesDefeated < 3);
     if (userHealth === 0) {
-        console.log('Grant wins');
+        console.log('Grant wins the game!');
     }
     else {
         console.log (`${user} wins the game!`);
