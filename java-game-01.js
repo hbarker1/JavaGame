@@ -1,36 +1,100 @@
 
 
-// let game = prompt ('Do you want to play a game?')
-// console.log(game);
-
-// if (game === 'yes') {
-//     let name = prompt ('What is your name?')
-//     console.log(name);
-// }
+let game = prompt ('Do you want to play a game?')
+console.log(game);
 
 
-// else {
-// }
+let name = prompt;
 
 
-let grant = 'Grant the Mighty Chicken';
-let user = name;
-let userHealth = 40;
-let grantHealth = 10;
-let attack1 = Math.floor((Math.random()*3));
-let attack2 = Math.floor((Math.random()*3));
+if (game === 'yes') {
+    name = prompt ('What is your name?')
+    console.log(name);
 
+    let user = name;
+    let grant = 'Grant the Mighty Chicken';
+    let userHealth = 40;
+    let grantHealth = 10;
+    let attack1 = Math.floor((Math.random()*3));
+    let attack2 = Math.floor((Math.random()*3));
+    
+    
+    grantHealth = grantHealth - attack1;
+    userHealth = userHealth - attack2;
 
+    do {
+        // let timer;
+        // timer = setInterval(userHealth, 40);
+        // timer = setInterval(grantHealth, 10);
 
+        console.log(`${grant} has ${grantHealth} health left`);
+    
+        console.log(`${user} has ${userHealth} health left`);
 
-
-do {
-    console.log(`${grant} has ${grantHealth - attack1} health left`);
-
-    console.log(`${user} has ${userHealth - attack2} health left`);
+        
     break;
+        
+        
+    
+    
+    }while (grantHealth <= 10 && userHealth <= 40);
 
-}while (grantHealth <= 10 && userHealth <= 40)
+
+}
+
+
+//     do {
+
+//         console.log(`${grant} has ${grantHealth} health left`);
+    
+//         console.log(`${user} has ${userHealth} health left`);
+//         attack1--;
+//         attack2--;
+//         break;
+    
+        
+        
+    
+    
+//     }while (grantHealth <= 10 && userHealth <= 40);
+    
+    
+        
+    
+// }
+
+
+// else { 
+// }
+
+
+// // let grant = 'Grant the Mighty Chicken';
+// // let user = name;
+// // let userHealth = 40;
+// let grantHealth = 10;
+// let attack1 = Math.floor((Math.random()*3));
+// let attack2 = Math.floor((Math.random()*3));
+
+
+// grantHealth = grantHealth - attack1;
+// userHealth = userHealth - attack2;
+
+
+// do {
+
+//     console.log(`${grant} has ${grantHealth} health left`);
+
+//     console.log(`${user} has ${userHealth} health left`);
+//     grantHealth--;
+//     userHealth--;
+//     break;
+
+    
+    
+
+
+// }while (grantHealth <= 10 && userHealth <= 40)
+
 
     
 
