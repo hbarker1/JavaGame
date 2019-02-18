@@ -7,6 +7,7 @@ console.log(game);
 let name = prompt;
 
 
+
 if (game === 'yes') {
     name = prompt ('What is your name?')
     console.log(name);
@@ -31,16 +32,38 @@ if (game === 'yes') {
     
         console.log(`${user} has ${userHealth} health left`);
 
-        
-    break;
-        
-        
+break;        
     
     
-    }while (grantHealth <= 10 && userHealth <= 40);
+    }while (grantHealth > 0 && grantHealth > 0);
+    
+   
+
 
 
 }
+else {
+
+}
+
+
+
+// else if (grantHealth === 0) {
+//     game === 'yes' 
+//     name = prompt ('What is your name?')
+//     console.log(name);
+
+
+//     console.log(`${grant} has ${grantHealth} health left`);
+    
+//     console.log(`${user} has ${userHealth} health left`);
+
+//     grantHealth--;
+//     userHealth--;
+
+
+
+// }
 
 
 //     do {
@@ -64,8 +87,9 @@ if (game === 'yes') {
 // }
 
 
-// else { 
-// }
+
+
+
 
 
 // // let grant = 'Grant the Mighty Chicken';
